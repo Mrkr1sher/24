@@ -1,0 +1,27 @@
+body {
+  padding-left: 10px;
+}
+
+#img3, #img2, #img4 {
+  padding-left: 10px;
+}
+
+#b, #s {
+  margin-left: 320px;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+#d {
+  margin-left: 335px;
+  font-size: 25px;
+}
+
+h1 {
+  width:700px;
+  margin-left: 70px;
+  text-align: center;
+  font-size: 50px;
+}
