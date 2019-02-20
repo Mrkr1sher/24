@@ -5,13 +5,14 @@ function randInt(x) {
 }
 
 window.onload = function() {
-  document.getElementById("b").addEventListener("click", function() {
+  document.onkeydown = function() {
+    console.log("HELLO WORLD");
     var d = document.getElementById("d");
     var arr = getNums();
-    d.innerHTML = strArray(arr);
-    d.style.display = "none";
+    // d.innerHTML = strArray(arr);
+    // d.style.display = "none";
     replaceImgs(arr);
-  });
+  };
   document.getElementById("s").addEventListener("click", function() {
     document.getElementById("d").style.display = "inline";
   });
@@ -126,21 +127,6 @@ function replaceImgs(arr) {
   nums.splice(ind, 1);
   newA.push(nums[0]);
   for (var i = 0; i < newA.length; i++) {
-    document.getElementById("img" + (i + 1)).src = "img/" + newA[i] + "_of_diamonds.png";
+    document.getElementById("quad" + (i + 1)).innerHTML = newA[i];
   }
 }
-
-
-
-// function randSuite() {
-//   switch(randInt(4)) {
-//     case 1:
-//     return "clubs";
-//     case 2:
-//     return "diamonds";
-//     case 3:
-//     return "hearts";
-//     case 4:
-//     return "spades";
-//   }
-// }
